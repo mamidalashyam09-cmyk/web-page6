@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+<div class="login-box">
+
+    <h1>Login</h1>
+
+    <input type="text" id="username" placeholder="Username">
+
+    <input type="password" id="password" placeholder="Password">
+
+    <div class="options">
+        <label>
+            <input type="checkbox"> Remember me
+        </label>
+
+        <span>Forgot password?</span>
+    </div>
+
+
+    <button onclick="login()">Login</button>
+
+    <p>
+        Don't have an account? <b>Register</b>
+    </p>
+
+</div>
+
+
+<script>
+
+function login(){
+
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+
+
+    if(user!="" && pass!=""){
+
+        alert("Login Successful");
+
+        window.location.href="products.html";
+
+    }
+
+    else{
+
+        alert("Please enter username and password");
+
+    }
+
+}
+
+
+</script>
+
+
+</body>
+</html>
